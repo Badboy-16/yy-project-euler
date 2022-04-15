@@ -14,13 +14,11 @@ def is_prime_num(x):
     
     prime = True
     
-    for i in range(2, int(x)):
+    for i in range(2, int(x**(1/2))):
         if x % i == 0:
             prime = False
             break
-        else:
-            continue
-    
+            
     return prime
 
 def prime_fac(binomial_coef):
